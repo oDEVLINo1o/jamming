@@ -3,7 +3,7 @@ import {config} from './config'
 
 let userAccessToken;
 
-const redirectURI = 'http://jamminapp.surge.sh';
+const redirectURI = 'https://jamminapp.netlify.app';
 const spotifyBaseURL = 'https://api.spotify.com/v1';
 
 export const Spotify = {
