@@ -1,13 +1,13 @@
 import './App.css';
 import React from 'react';
 
-import SearchBar from '../SearchBar/SearchBar';
-import SearchResults from '../SearchResults/SearchResults';
-import Playlist from '../Playlist/Playlist';
-import Spotify from '../../util/Spotify';
+import {SearchBar} from '../SearchBar/SearchBar';
+import {SearchResults} from '../SearchResults/SearchResults';
+import {Playlist} from '../Playlist/Playlist';
+import {Spotify} from '../../util/Spotify';
 
 
-class App extends React.Component {
+export class App extends React.Component {
   constructor(props) {
     super(props);
     // SearchResults will be filled when the user makes a Search
@@ -60,7 +60,7 @@ class App extends React.Component {
 
   search(term) {
     Spotify.search(term).then(searchResults => {
-      this.setState({searchResults: searchResults})
+      this.setState({SearchResults: searchResults})
     }) 
   }
 
@@ -89,4 +89,4 @@ class App extends React.Component {
   }
 };
 
-export default App;
+

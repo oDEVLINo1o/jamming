@@ -3,7 +3,7 @@ import {config} from './config'
 
 let userAccessToken;
 
-const redirectURI = 'http://localhost:3000/';
+const redirectURI = 'http://jammin.surge.sh';
 const spotifyBaseURL = 'https://api.spotify.com/v1';
 
 export const Spotify = {
